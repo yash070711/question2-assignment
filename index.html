@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div>
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter" onchange="createProductList()">
+      <option value="all">All</option>
+      <option value="Books">Books</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Home & Kitchen">Home & Kitchen</option>
+      <option value="Toys & Games">Toys & Games</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="availabilityFilter">Filter by Availability:</label>
+    <select id="availabilityFilter" onchange="createProductList()">
+      <option value="all">All</option>
+      <option value="available">Available</option>
+      <option value="unavailable">Unavailable</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="minPrice">Minimum Price:</label>
+    <input type="text" id="minPrice" onchange="createProductList()">
+    <label for="maxPrice">Maximum Price:</label>
+    <input type="text" id="maxPrice" onchange="createProductList()">
+  </div>
+
+  <ul id="productList">
+  </ul>
+
+  <script src="./product.js">
+   
+  </script>
+</body>
+</html>
